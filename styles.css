@@ -1,2 +1,37 @@
 
 /* Your CSS Code here. */
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+body{
+	display: flex;
+	justify-content:center;
+	align-itmes:center;
+	height:100vh;
+	background:white;
+}
+.container{
+	background:black;
+	color: white;
+	padding:20px;
+	border-radius:15px
+}
+.btn-container{
+	display:flex;
+}
+button{
+	padding: 5px;
+	display:inline-block;
+	margin-inline:20px;
+	margin-block: 10px;
+	border-radius:5px;
+}
+section, #name, #image{
+	margin-block:20px;
+}
+section h2{
+	margin-bottom : 10px;
+}
+
