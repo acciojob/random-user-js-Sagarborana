@@ -12,7 +12,7 @@ const url = 'https://randomuser.me/api/'
 const fetchData = async () =>{
 	const response = await fetch('https://randomuser.me/api/');
 	const data = await response.json();
-	name.innerText = data.results[0].name.title + " "+ data.results[0].name.first + " " + data.results[0].name.last;
+	name.innerText = data.results[0].name.first + " " + data.results[0].name.last;
 	image.innerHTML = `<img src= '${data.results[0].picture.large}'>`
 
 	ageBtn.addEventListener("click", () =>{
