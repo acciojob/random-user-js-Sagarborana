@@ -5,7 +5,7 @@ const extra = document.querySelector("section span")
 const ageBtn = document.getElementById("age")
 const emailBtn = document.getElementById("email")
 const phoneBtn = document.getElementById("phone")
-const userBtn = document.getElementById("get-user")
+const userBtn = document.getElementById("getUser")
 
 const url = 'https://randomuser.me/api/'
 
