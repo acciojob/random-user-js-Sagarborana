@@ -10,19 +10,19 @@ const userBtn = document.getElementById("get-user")
 const url = 'https://randomuser.me/api/'
 
 const fetchData = async () =>{
-	const response = await fetch('https://randomuser.me/api/');
+	const response = await fetch(url);
 	const data = await response.json();
-	name.innerText = data.results[0].name.first + " " + data.results[0].name.last;
+	name.textContent = data.results[0].name.first + " " + data.results[0].name.last;
 	image.innerHTML = `<img src= '${data.results[0].picture.large}'>`
 
 	ageBtn.addEventListener("click", () =>{
-		extra.innerText = `Age: ${data.results[0].dob.age}`
+		extra.textContent = `Age: ${data.results[0].dob.age}`
 	}) 
 	emailBtn.addEventListener("click", () =>{
-		extra.innerText = `Email: ${data.results[0].email}`
+		extra.textContent = `Email: ${data.results[0].email}`
 	}) 
 	phoneBtn.addEventListener("click", () =>{
-		extra.innerText = `Phone: ${data.results[0].phone}`
+		extra.textContent = `Phone: ${data.results[0].phone}`
 	}) 
 } 
 fetchData();
